@@ -1,0 +1,13 @@
+/public/static/css
+/public/static/icons
+.DS_Store
+.next
+node_modules
+/.git
+/.vscode
+/.next
+/.idea
+node_modules
+.next
+.vscode
+server.js

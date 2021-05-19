@@ -1,0 +1,14 @@
+{
+    "SIGNUP_FORM": {
+        "FIELD": {
+            "LOGIN": {
+                "TITLE": "Login",
+                "PLACEHOLDER": "Your login"
+            },
+            "PASSWORD": {
+                "TITLE": "Password",
+                "PLACEHOLDER": "Your password"
+            }
+        }
+    }
+}

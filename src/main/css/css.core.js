@@ -1,0 +1,19 @@
+import React from 'react';
+
+import { ServerStyleSheet } from 'styled-components';
+
+export async function getInitialStyleProps(ctx) {
+  const sheet = new ServerStyleSheet();
+  const originalRenderPage = ctx.renderPage;
+
+  try {
+    ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+      });
+
+    return sheet.getStyleElement();
+  } finally {
+    sheet.seal();
+  }
+}
